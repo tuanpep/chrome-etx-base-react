@@ -1,17 +1,7 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import Login from "./views/Login";
-import Home from "./views/Home";
+import AppRouter from "./router";
 
 function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/index.html" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </Router>
-  );
+  return <AppRouter />;
 }
 
 export default App;

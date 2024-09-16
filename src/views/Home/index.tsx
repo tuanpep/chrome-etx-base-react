@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { useStore } from "@/store";
 import React from "react";
 import { Link } from "react-router-dom";
@@ -9,10 +10,12 @@ const Home: React.FC = () => {
     <div>
       <div>
         <p>Count: {count}</p>
-        <button onClick={increment}>Increment</button>
+        <Button onClick={increment}>Increment</Button>
       </div>
       <h1>Home</h1>
-      <Link to="/login">Go to Login</Link>
+      <Link to="/login">
+        <Button>Login</Button>
+      </Link>
     </div>
   );
 };
